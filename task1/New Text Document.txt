@@ -1,0 +1,8 @@
+import joblib
+
+# Load the model
+loaded_model = joblib.load('random_forest_regressor_model.pkl')
+
+# Example usage
+new_data = pd.DataFrame([...])  # Replace with actual data
+predictions = loaded_model.predict(new_data)
